@@ -1,0 +1,43 @@
+﻿<SettingsFlyout
+    x:Class="Conqueror.DonateFlyout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Conqueror"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/BadgeLogo.scale-180.png"
+    Title="Donate" RequestedTheme="Dark"
+    d:DesignWidth="346" HeaderBackground="#FFC80000" Background="#222">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Donate to Support Conqueror" />
+
+            <!-- Section 1 body -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" FontFamily="Global User Interface">
+                <TextBlock.Text>
+                    Thank you for helping to support Conqueror. Your support makes it possible to provide a high quality app without including ads or charging a fee.
+                </TextBlock.Text>
+            </TextBlock>
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" FontFamily="Global User Interface">
+                <TextBlock.Text>
+                    Without you, Conqueror would not exist. Thank You!
+                </TextBlock.Text>
+            </TextBlock>
+            <Button HorizontalAlignment="Stretch" Margin="0,0,0,25" Click="OnReview">Donate an Awesome Review</Button>
+            <Button HorizontalAlignment="Stretch" Click="OnDonate">Donate with PayPal</Button>
+
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

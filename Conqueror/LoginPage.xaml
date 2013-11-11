@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="Conqueror.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Conqueror"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource BackgroundBrush}" DataContext="{StaticResource PlayerViewModel}">
+        <Image Source="/Assets/Maps/Eurasia.jpg" Stretch="UniformToFill" Opacity="0.1"/>
+        <Image Source="/Assets/RedCorner.png" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image Source="/Assets/RedCorner.png" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1" ScaleY="-1"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <StackPanel.Transitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition FromVerticalOffset="-100"/>
+                </TransitionCollection>
+            </StackPanel.Transitions>
+            <Image Source="/Assets/Background.png" Width="240" Margin="0,-60"/>
+            <TextBlock Text="CONQUEROR" HorizontalAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" />
+            <TextBlock Text="by: sam wronski" HorizontalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}" />
+            <TextBlock Text="please login" HorizontalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}" Margin="0,100,0,12"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="username: " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-8,0,0" Style="{ThemeResource SubheaderTextBlockStyle}" Grid.Column="0" Grid.Row="0"/>
+                <TextBlock Text="password: " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-8,0,0" Style="{ThemeResource SubheaderTextBlockStyle}" Grid.Column="0" Grid.Row="2"/>
+                <TextBox Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" InputScope="Default" Text="{Binding Username, Mode=TwoWay}" PlaceholderText="username"/>
+                <PasswordBox Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" Password="{Binding Password, Mode=TwoWay}" PlaceholderText="password"/>
+            </Grid>
+            <Button Content="login" HorizontalAlignment="Stretch" Margin="-4,8" Click="OnNavigate"/>
+            <Button Content="get an account" HorizontalAlignment="Stretch" Margin="-4,-2" Click="OnGetAccount"/>
+            
+            <TextBlock Text="Your password is not required to use Conqueror. Your password will only be used when accessing the Conqueror Browser for Auto Login." Margin="0,30,0,0" Width="340" TextWrapping="Wrap"/>
+        </StackPanel>
+        
+        <TextBlock Text="Conqueror is supported by your Donations. Thank You." VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="{StaticResource AccentBrush}" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="16" Tapped="OnDonate">
+            <TextBlock.Transitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition FromVerticalOffset="100"/>
+                </TransitionCollection>
+            </TextBlock.Transitions>
+        </TextBlock>
+    </Grid>
+</Page>

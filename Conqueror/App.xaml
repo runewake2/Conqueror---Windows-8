@@ -1,0 +1,21 @@
+﻿<Application
+    x:Class="Conqueror.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Conqueror" xmlns:vms="using:Conqueror.ViewModel"
+    RequestedTheme="Dark">
+
+    <Application.Resources>
+        <x:String x:Key="AppName">Conqueror</x:String>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FFC80000"/>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FF000000"/>
+
+        <!--GLOBAL VIEW MODELS-->
+        <vms:CurrentPlayerViewModel x:Key="PlayerViewModel"/>
+        
+        <!--THEME OVERRIDES-->
+        <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBackgroundThemeBrush" Color="#FFC80000" />
+        <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBorderThemeBrush" Color="#FFC80000" />
+        <SolidColorBrush x:Key="ListViewItemSelectedBackgroundThemeBrush" Color="#FFC80000" />
+    </Application.Resources>
+</Application>
