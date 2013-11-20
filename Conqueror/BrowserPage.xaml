@@ -57,6 +57,11 @@
                     <BitmapIcon UriSource="Assets/AppBar/appbar.refresh.png"/>
                 </AppBarButton.Icon>
             </AppBarButton>
+            <AppBarButton Label="open in ie" Click="OpenIE">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/AppBar/appbar.ie.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
         </CommandBar>
     </Page.BottomAppBar>
 

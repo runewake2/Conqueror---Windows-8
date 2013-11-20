@@ -18,17 +18,10 @@
       <m2:VisualElements DisplayName="Conqueror" Square30x30Logo="Assets\SmallLogo.png" Description="Conqueror" ForegroundText="light" BackgroundColor="#c80000" Square150x150Logo="Assets\Logo.png">
         <m2:DefaultTile ShortName="Conqueror">
         </m2:DefaultTile>
-        <m2:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <!--m2:LockScreen Notification="" BadgeLogo="Assets\BadgeLogo.png" /-->
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
         <m2:ApplicationView MinWidth="width500" />
       </m2:VisualElements>
-      <Extensions>
-        <Extension Category="windows.backgroundTasks" StartPage="BackgroundAgent.cs">
-          <BackgroundTasks>
-            <Task Type="timer" />
-          </BackgroundTasks>
-        </Extension>
-      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

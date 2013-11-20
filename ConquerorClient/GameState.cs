@@ -21,7 +21,8 @@ namespace ConquerorClient
         Assassin   = 'A',
         Doubles    = 'D',
         Triples    = 'T',
-        Quadruples = 'Q'
+        Quadruples = 'Q',
+        Polymorphic = 'P',
     }
 
     public enum InitialTroops

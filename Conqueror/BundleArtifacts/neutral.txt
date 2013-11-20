@@ -1,0 +1,3 @@
+MainPackage=D:\Development\Windows 8\Conqueror\Conqueror\Conqueror\bin\Release\Conqueror_1.1.0.0_Bundle\Conqueror_1.1.0.0_AnyCPU.appx
+SymbolPackage=D:\Development\Windows 8\Conqueror\Conqueror\Conqueror\AppPackages\Conqueror_1.1.0.0_Test\Conqueror_1.1.0.0_AnyCPU.appxsym
+ResourcePack=D:\Development\Windows 8\Conqueror\Conqueror\Conqueror\bin\Release\Conqueror_1.1.0.0_Bundle\Conqueror_1.1.0.0_scale-180.appx

@@ -24,7 +24,7 @@
                         <BitmapIcon UriSource="Assets/AppBar/appbar.add.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
-                <AppBarButton Content="refresh" Label="refresh">
+                <AppBarButton Content="refresh" Label="refresh" Click="RefreshGames">
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="Assets/AppBar/appbar.refresh.png"/>
                     </AppBarButton.Icon>
@@ -109,13 +109,13 @@
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid RightTapped="ShowFlyoutRightTap" Holding="ShowFlyoutHold">
-                                        <FlyoutBase.AttachedFlyout>
+                                        <!--FlyoutBase.AttachedFlyout>
                                             <MenuFlyout>
                                                 <MenuFlyoutItem Text="Add Frenemy"/>
                                                 <MenuFlyoutItem Text="Send PM"/>
                                                 <MenuFlyoutItem Text="View Profile"/>
                                             </MenuFlyout>
-                                        </FlyoutBase.AttachedFlyout>
+                                        </FlyoutBase.AttachedFlyout-->
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="20"/>
                                             <ColumnDefinition Width="*"/>
@@ -270,7 +270,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Ellipse Fill="White" Margin="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock Grid.Column="1" Text="You aren't connected to the Internet." VerticalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock Grid.Column="1" Text="You aren't connected to the Internet." VerticalAlignment="Center" Margin="0,0,0,12" Style="{ThemeResource SubheaderTextBlockStyle}"/>
                 </Grid>
                 <Grid Height="64">
                     <Grid.ColumnDefinitions>
@@ -278,7 +278,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Ellipse Fill="White" Margin="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock Grid.Column="1" Text="You don't have any current games." VerticalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock Grid.Column="1" Text="You don't have any current games." VerticalAlignment="Center" Margin="0,0,0,12" Style="{ThemeResource SubheaderTextBlockStyle}"/>
                 </Grid>
                 <Grid Height="64">
                     <Grid.ColumnDefinitions>
@@ -286,7 +286,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Ellipse Fill="White" Margin="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock Grid.Column="1" Text="You misspelled your username." VerticalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock Grid.Column="1" Text="You misspelled your username." VerticalAlignment="Center" Margin="0,0,0,12" Style="{ThemeResource SubheaderTextBlockStyle}"/>
                 </Grid>
                 <Grid Height="64">
                     <Grid.ColumnDefinitions>
@@ -294,7 +294,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Ellipse Fill="White" Margin="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock Grid.Column="1" Text="The user doesn't exist." VerticalAlignment="Center" Style="{ThemeResource SubheaderTextBlockStyle}"/>
+                    <TextBlock Grid.Column="1" Text="The user doesn't exist." VerticalAlignment="Center" Margin="0,0,0,12" Style="{ThemeResource SubheaderTextBlockStyle}"/>
                 </Grid>
                 <Button Content="Sign In With a Different Username" Click="NavigateSignOut" HorizontalAlignment="Stretch"/>
                 <Button Content="Start a New Game on Conquer Club" Click="NavigateNewGame" HorizontalAlignment="Stretch"/>

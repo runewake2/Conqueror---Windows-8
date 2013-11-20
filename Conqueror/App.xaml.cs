@@ -125,7 +125,7 @@ namespace Conqueror
                 SettingsCommand privacyCommand = new SettingsCommand("privacy", "Privacy Policy",
                     (handler) =>
                     {
-                        Windows.System.Launcher.LaunchUriAsync(new Uri("http://conquerclub.com/public.php?mode=privacy"));
+                        Windows.System.Launcher.LaunchUriAsync(new Uri("http://www.conquerclub.com/public.php?mode=privacy"));
                     });
                 if (f.CurrentSourcePageType != typeof(LoginPage))
                     e.Request.ApplicationCommands.Add(settingsCommand);

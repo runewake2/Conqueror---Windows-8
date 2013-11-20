@@ -144,5 +144,11 @@ namespace Conqueror
             if (focus != null)
                 focus.Text += "7";
         }
+
+        private async void OpenIE(object sender, RoutedEventArgs e)
+        {
+            var open = browser.Source;
+            await Windows.System.Launcher.LaunchUriAsync(open);
+        }
     }
 }

@@ -154,5 +154,10 @@ namespace Conqueror
             ViewModel.CurrentPlayerViewModel.Instance.Password = "";
             this.Frame.Navigate(typeof(LoginPage));
         }
+
+        private void RefreshGames(object sender, RoutedEventArgs e)
+        {
+            ViewModel.CurrentGamesViewModel.Instance.Refresh();
+        }
     }
 }

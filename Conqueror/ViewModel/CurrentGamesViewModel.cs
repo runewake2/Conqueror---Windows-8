@@ -242,6 +242,9 @@ namespace Conqueror.ViewModel
                 case "Q":
                     type = "Quadruples";
                     break;
+                case "P":
+                    type = "Polymorphic";
+                    break;
                 default:
                     type = "Unknown Game Mode";
                     break;
@@ -408,6 +411,11 @@ namespace Conqueror.ViewModel
             client.OnGetGamesComplete += GamesCompleted;
             client.OnAPIUnavailable += APIUnavailable;
             client.OnGetGamesError += GamesError;
+            client.FindPlayersCurrentGames(CurrentPlayerViewModel.Instance.Username);
+        }
+
+        public void Refresh()
+        {
             client.FindPlayersCurrentGames(CurrentPlayerViewModel.Instance.Username);
         }
 
