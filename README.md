@@ -11,4 +11,4 @@ Conqueror for Windows 8 takes full advantage of the modern UI experience of Wind
 
 Feel free to branch the project and add awesome new features to Conqueror.
 
-Currently Conqueror for Windows 8 is not available for download from the Windows Store. This will be remedied shortly as I sort out the last few issues before version 1.0.
+You may download Conqueror from the Windows Store here: http://apps.microsoft.com/windows/app/conqueror/0d56edf7-b8db-4bbe-98c1-74a38bfdc7dd
